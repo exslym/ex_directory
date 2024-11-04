@@ -1,3 +1,4 @@
+import { Toaster } from '@/components/ui/toaster';
 import 'easymde/dist/easymde.min.css';
 import type { Metadata } from 'next';
 import localFont from 'next/font/local';
@@ -61,7 +62,10 @@ export default function RootLayout({
 }>) {
 	return (
 		<html lang='en'>
-			<body className={workSans.variable}>{children}</body>
+			<body className={workSans.variable}>
+				{children}
+				<Toaster />
+			</body>
 		</html>
 	);
 }
