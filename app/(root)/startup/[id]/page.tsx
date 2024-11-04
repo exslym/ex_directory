@@ -10,7 +10,7 @@ import Link from 'next/link';
 import { notFound } from 'next/navigation';
 import React, { Suspense } from 'react';
 
-export const experimental_ppr = true;
+// export const experimental_ppr = true;
 
 const md = markdownit();
 
