@@ -10,10 +10,11 @@ const nextConfig: NextConfig = {
 			},
 		],
 	},
-	// experimental: {
-	// 	ppr: 'incremental',
-	// },
-	experimental: { after: true },
+	experimental: {
+		ppr: 'incremental',
+		after: true,
+	},
+	// experimental: { after: true },
 	devIndicators: {
 		appIsrStatus: true,
 		buildActivity: true,
