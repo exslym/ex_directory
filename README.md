@@ -1,6 +1,6 @@
 <div align="center">
   <br />
-      <img src="https://raw.githubusercontent.com/exslym/ex_directory/refs/heads/main/public/preview.png" alt="preview">
+      <img src="https://raw.githubusercontent.com/exslym/ex_directory/refs/heads/main/public/preview.jpg" alt="preview">
   <br />
 
   <div>
