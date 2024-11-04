@@ -12,7 +12,7 @@ const Navbar = async () => {
 				<Link href='/'>
 					<div className='flex justify-between items-center gap-2'>
 						<Image src='/logo.png' alt='logo' width={30} height={30} />
-						<p className='text-xl font-bold'>Directory</p>
+						<p className='text-xl font-bold'>Startups</p>
 					</div>
 				</Link>
 

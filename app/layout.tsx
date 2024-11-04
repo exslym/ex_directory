@@ -50,7 +50,7 @@ const workSans = localFont({
 });
 
 export const metadata: Metadata = {
-	title: 'EX Directory',
+	title: 'NEXT Startups',
 	description: 'Pitch, Vote and Grow',
 };
 
