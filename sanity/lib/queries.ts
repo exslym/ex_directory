@@ -15,22 +15,6 @@ export const STARTUPS_QUERY =
   image
 }`);
 
-/* 
-*[_type == "startup" && defined(slug.current)]{
-  _id,
-    title,
-    slug,
-    _createdAt,
-    "author" : author -> {
-      _id, name, slug, image, bio
-    },
-    views, 
-    description,
-    category, 
-    image
-}
-*/
-
 export const STARTUP_BY_ID_QUERY = defineQuery(`*[_type == "startup" && _id == $id][0]{
   _id, 
   title, 

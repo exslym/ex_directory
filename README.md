@@ -1,3 +1,5 @@
+## [EXS Startups](https://ex-directory.vercel.app/)
+
 <div align="center">
   <br />
       <img src="https://raw.githubusercontent.com/exslym/ex_directory/refs/heads/main/public/preview.jpg" alt="preview">
@@ -13,6 +15,8 @@
 
 <h3 align="center">Startup Directory Platform</h3>
 </div>
+
+### Vercel Deployment: [EXS Startups](https://ex-directory.vercel.app/)
 
 ## <a name="introduction">🤖 Introduction</a>
 
