@@ -1,5 +1,8 @@
 'use client';
 
+import { Button } from '@/components/ui/button';
+import { Input } from '@/components/ui/input';
+import { Textarea } from '@/components/ui/textarea';
 import { useToast } from '@/hooks/use-toast';
 import { createPitch } from '@/lib/actions';
 import { formSchema } from '@/lib/validation';
@@ -8,9 +11,6 @@ import { Send } from 'lucide-react';
 import { useRouter } from 'next/navigation';
 import React, { useActionState, useState } from 'react';
 import { z } from 'zod';
-import { Button } from './ui/button';
-import { Input } from './ui/input';
-import { Textarea } from './ui/textarea';
 
 const StartupForm = () => {
 	const [errors, setErrors] = useState<Record<string, string>>({});

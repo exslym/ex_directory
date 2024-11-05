@@ -1,9 +1,9 @@
 import { auth, signIn, signOut } from '@/auth';
+import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
 import { BadgePlus, LogOut } from 'lucide-react';
 import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react';
-import { Avatar, AvatarFallback, AvatarImage } from './ui/avatar';
 
 const Navbar = async () => {
 	const session = await auth();
@@ -40,7 +40,7 @@ const Navbar = async () => {
 
 							<Link href={`/user/${session?.id}`} className='flex items-center gap-2'>
 								<span className='font-bold max-sm:hidden'>{session?.user?.name}</span>
-								<Avatar className='size-10'>
+								<Avatar className='size-[30px]'>
 									<AvatarImage src={session?.user?.image || ''} alt={session?.user?.name || ''} />
 									<AvatarFallback>AV</AvatarFallback>
 								</Avatar>
