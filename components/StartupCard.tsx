@@ -10,7 +10,7 @@ import { Skeleton } from './ui/skeleton';
 export type StartupCardType = Omit<Startup, 'author'> & { author?: Author };
 
 const StartupCard = ({ post }: { post: StartupCardType }) => {
-	const { _createdAt, views, author, _id, title, description, category, image } = post;
+	const { _createdAt, views, author, title, category, _id, image, description } = post;
 
 	return (
 		<li className='startup-card group'>
@@ -33,8 +33,8 @@ const StartupCard = ({ post }: { post: StartupCardType }) => {
 				</div>
 				<Link href={`/user/${author?._id}`}>
 					<Image
-						src={author?.image || ''}
-						alt={author?.name || ''}
+						src={author?.image || 'https://placehold.co/48x48'}
+						alt={author?.name || 'avatar'}
 						width={48}
 						height={48}
 						className='rounded-full'
@@ -48,7 +48,7 @@ const StartupCard = ({ post }: { post: StartupCardType }) => {
 			</Link>
 
 			<div className='flex-between gap-3 mt-5'>
-				<Link href={`/?query=${category?.toLowerCase}`}>
+				<Link href={`/?query=${category?.toLowerCase()}`}>
 					<p className='text-16-medium'>{category}</p>
 				</Link>
 
